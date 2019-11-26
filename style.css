@@ -22,7 +22,7 @@ body {
     font-size: x-large;
 }
 .accent-text {
-    color: rgb(192, 38, 192);
+    color: #C2BBFF;
 }
 .logos {
     height:40px;
@@ -30,11 +30,4 @@ body {
 }
 #profile-pic {
 height: 250px;
-}
-
-@media only screen and (max-width: 767px) {
-    #portfolio-logo {
-        margin-left: 0;
-    }
-    
 }
