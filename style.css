@@ -1,10 +1,20 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #eee; 
+}
+::-webkit-scrollbar-thumb {
+    background: #343a40;
+    height: 15%;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444; 
+}
 body {
     font-family: 'Stylish', sans-serif;
 }
-h1 {
-    size: 3rem;
-    line-height: 1.5;
-}
+
 .navbar-brand {
     line-height: 2em;
 }
@@ -17,4 +27,14 @@ h1 {
 .logos {
     height:40px;
     width: 40px;
+}
+#profile-pic {
+height: 250px;
+}
+
+@media only screen and (max-width: 767px) {
+    #portfolio-logo {
+        margin-left: 0;
+    }
+    
 }
