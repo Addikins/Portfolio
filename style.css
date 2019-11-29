@@ -21,13 +21,28 @@ body {
 .nav-link {
     font-size: x-large;
 }
+.nav-link img:hover {
+  height: 43px;
+  width: 43px;
+  transition: .3s;
+}
 .accent-text {
-    color: #C2BBFF;
+  color: #C2BBFF;
+}
+.accent-secondary {
+  background-color: #C2BBFF;
 }
 .logos {
-    height:40px;
-    width: 40px;
+  height:40px;
+  width: 40px;
 }
 #profile-pic {
 height: 250px;
+}
+#projectIndicators {
+  height: 30em;
+}
+
+.carousel-item img {
+  height: 30em;
 }
