@@ -30,7 +30,7 @@ body {
   color: #C2BBFF;
 }
 .accent-secondary {
-  background-color: #C2BBFF;
+  background-color: #343a40;
 }
 .logos {
   height:40px;
@@ -42,7 +42,14 @@ height: 250px;
 #projectIndicators {
   height: 30em;
 }
-
 .carousel-item img {
-  height: 30em;
+  height: 25em;
+  border-radius: 5%;
+}
+.carousel-caption p{
+  visibility: hidden;
+
+}
+.carousel-caption p:hover {
+  visibility: visible;
 }
