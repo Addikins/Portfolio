@@ -29,6 +29,9 @@ body {
 .accent-text {
   color: #C2BBFF;
 }
+.accent-text-secondary {
+  color: #343a40;
+}
 .accent-secondary {
   background-color: #343a40;
 }
@@ -39,17 +42,16 @@ body {
 #profile-pic {
 height: 250px;
 }
-#projectIndicators {
-  height: 30em;
-}
 .carousel-item img {
   height: 25em;
   border-radius: 5%;
 }
-.carousel-caption p{
-  visibility: hidden;
-
+.carousel-subtitle {
+  background-color: #343a40;
+  border-radius: 2%;
 }
-.carousel-caption p:hover {
-  visibility: visible;
+
+.card-img-overlay {
+  width: 60%;
+  margin-top: 30%;
 }
