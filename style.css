@@ -14,7 +14,13 @@
 body {
     font-family: 'Stylish', sans-serif;
 }
-
+a {
+  color: #343a40;
+  text-decoration: none;
+}
+a:hover {
+  color: #C2BBFF;
+}
 .navbar-brand {
     line-height: 2em;
 }
@@ -42,16 +48,7 @@ body {
 #profile-pic {
 height: 250px;
 }
-.carousel-item img {
-  height: 25em;
-  border-radius: 5%;
-}
-.carousel-subtitle {
-  background-color: #343a40;
-  border-radius: 2%;
-}
 
-.card-img-overlay {
-  width: 60%;
-  margin-top: 30%;
+.round-border {
+  border-radius: 10%;
 }
