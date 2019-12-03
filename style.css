@@ -15,7 +15,7 @@ body {
     font-family: 'Stylish', sans-serif;
 }
 a {
-  color: #343a40;
+  color: white;
   text-decoration: none;
 }
 a:hover {
@@ -51,4 +51,7 @@ height: 250px;
 
 .round-border {
   border-radius: 10%;
+}
+.round-top {
+  border-radius: 10% 10% 0% 0%;
 }
