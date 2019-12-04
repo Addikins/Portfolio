@@ -15,11 +15,19 @@ body {
     font-family: 'Stylish', sans-serif;
 }
 a {
-  color: white;
+  color: #343a40;
   text-decoration: none;
 }
 a:hover {
   color: #C2BBFF;
+}
+hr {
+  border-radius: 50%;
+  height: 2px;
+  width: 65%;
+  background-color: #C2BBFF;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 .navbar-brand {
     line-height: 2em;
@@ -39,7 +47,7 @@ a:hover {
   color: #343a40;
 }
 .accent-secondary {
-  background-color: #343a40;
+  background-color: #C2BBFF;
 }
 .logos {
   height:40px;
