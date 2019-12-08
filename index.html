@@ -1,272 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Stylish&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Adhem Azzabi | Full-Stack Developer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
-  <title>Adhem Azzabi | Full-Stack Developer</title>
-</head>
+  <body>
+    <!--Navigation-->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand h1 ml-3" href="#" id="portfolio-logo"
+        ><img
+          src="logo2.png"
+          class="d-inline-block align-top logos"
+          alt="Main Logo"
+        />
+        Adhem Azzabi</a
+      >
 
-<body>
-  <!--Navigation-->
-  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand h1 ml-3" href="#" id="portfolio-logo"><img src="logo2.png"
-        class="d-inline-block align-top logos" alt="Main Logo" />
-      Adhem Azzabi</a>
+      <button
+        class="navbar-toggler mr-3"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-3">
+          <li class="nav-item mx-1">
+            <a
+              class="nav-link"
+              href="http://github.com/addikins"
+              target="_blank"
+              data-toggle="tooltip"
+              title="GitHub"
+              ><img
+                class="d-inline-block align-top logos"
+                src="github_logo2.png"
+                alt="GitHub Logo"
+            /></a>
+          </li>
+          <li class="nav-item mx-1">
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/adhem-azzabi-318301183"
+              target="_blank"
+              data-toggle="tooltip"
+              title="Linkedin"
+              ><img
+                class="d-inline-block align-top logos"
+                src="linkedin_logo.png"
+                alt="Linkedin Logo"
+            /></a>
+          </li>
+          <li class="nav-item mx-1">
+            <a
+              class="nav-link"
+              href="https://twitter.com/AdhemAzzabi"
+              target="_blank"
+              data-toggle="tooltip"
+              title="Twitter"
+              ><img
+                class="d-inline-block align-top logos"
+                src="twitter_logo.png"
+                alt="Twitter Logo"
+            /></a>
+          </li>
+          <li class="nav-item mx-1">
+            <a
+              class="nav-link"
+              href="mailto:adhemazzabi@gmail.com"
+              target="_blank"
+              data-toggle="tooltip"
+              title="Send an Email"
+              ><img
+                class="d-inline-block align-top logos"
+                src="email_logo2.png"
+                alt="Email Logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto mr-3">
-        <li class="nav-item mx-1">
-          <a class="nav-link" href="http://github.com/addikins" target="_blank" data-toggle="tooltip"
-            title="GitHub"><img class="d-inline-block align-top logos" src="github_logo2.png" alt="GitHub Logo" /></a>
-        </li>
-        <li class="nav-item mx-1">
-          <a class="nav-link" href="https://www.linkedin.com/in/adhem-azzabi-318301183" target="_blank"
-            data-toggle="tooltip" title="Linkedin"><img class="d-inline-block align-top logos" src="linkedin_logo.png"
-              alt="Linkedin Logo" /></a>
-        </li>
-        <li class="nav-item mx-1">
-          <a class="nav-link" href="https://twitter.com/AdhemAzzabi" target="_blank" data-toggle="tooltip"
-            title="Twitter"><img class="d-inline-block align-top logos" src="twitter_logo.png" alt="Twitter Logo" /></a>
-        </li>
-        <li class="nav-item mx-1">
-          <a class="nav-link" href="mailto:adhemazzabi@gmail.com" target="_blank" data-toggle="tooltip"
-            title="Send an Email"><img class="d-inline-block align-top logos" src="email_logo2.png"
-              alt="Email Logo" /></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--Main Content-->
-  <div class="wrapper container-fluid">
-    <div class="row justify-content-center text-center mt-5 mb-5">
-      <div class="col-lg-7">
-        <br />
-        <h1 class="mb-0 display-4">
-          Full-Stack Developer & Web Designer
-        </h1>
-        <h1>
-          <small class="text-muted">
-            I create <i class="accent-text">magical</i> experiences within
-            each detail of every project!
-          </small>
-        </h1>
+    <!--Intro-->
+    <div class="wrapper container-fluid">
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center mt-5 mb-5">
+          <div class="col-lg-7">
+            <br />
+            <h1 class="mb-0 display-4">
+              Full-Stack Developer & Web Designer
+            </h1>
+            <h1>
+              <small class="text-muted">
+                I create <span class="accent-text">magical</span> experiences
+                within each detail of every project!
+              </small>
+            </h1>
+          </div>
+        </div>
+        <!--About-->
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6 mt-5 mb-4">
+            <h2>Hi, I'm Adhem. Thanks for being here.</h2>
+            <p class="lead">
+              I’m a college student, an animal lover, and a world traveler. My
+              dream is to forge unforgettable ventures for individuals to
+              utilize and inspire them. Every day is used as a learning
+              opportunity. You can take a look at some of my work below. If
+              you're intrigued by what you see, please feel free to contact me!
+            </p>
+          </div>
+        </div>
+        <!--End Intro Section-->
       </div>
     </div>
-    <!--About-->
-    <div class="row justify-content-center text-center">
-      <div class="col-md-6 mt-5 mb-4">
-        <h2>Hi, I'm Adhem. Thanks for being here.</h2>
-        <p class="lead">
-          I’m a college student, an animal lover, and a world traveler. My
-          dream is to forge unforgettable ventures for individuals to utilize
-          and inspire them. Every day is used as a learning opportunity. You
-          can take a look at some of my work below. If you're intrigued by
-          what you see, please feel free to contact me!
-        </p>
-      </div>
-    </div>
+
     <!--Developer Section-->
     <!--Div for background color-->
-  </div>
-  <div class="container-fluid accent-secondary">
-    <div class="container-fluid">
-      <div class="row justify-content-center text-center mt-5 mx-auto">
-        <div class="card col-lg-4 col-sm-6 my-4" style="width: 18rem;">
-          <div class="card-body">
-            <h3 class="card-title mb-4">Front-End</h3>
-            <p class="card-text lead">
-              I love grabbing a blank canvas to work with and bringing
-              imagination to life!
-            </p>
+    <div class="wrapper container-fluid accent-secondary">
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center mt-5 mx-auto">
+          <div class="card col-lg-4 col-sm-6 col-12 my-4" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title mb-4">Front-End</h3>
+              <p class="card-text lead">
+                I love grabbing a blank canvas to work with and bringing
+                imagination to life!
+              </p>
+            </div>
+            <div class="h5 mt-3">Languages and Libraries</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  HTML5
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  CSS3
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  JavaScript
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  Bootstrap
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  jQuery
+                </button>
+              </li>
+            </ul>
           </div>
-          <div class="h5 mt-3">Languages and Libraries</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                HTML5
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                CSS3
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                JavaScript
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                Bootstrap
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                jQuery
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="card col-lg-4 col-sm-6 my-4" style="width: 18rem;">
-          <div class="card-body">
-            <h3 class="card-title mb-4">Tools of my Trade</h3>
-            <p class="card-text lead">
-              I use every tool in the shed to get the job done right!
-            </p>
+          <div class="card col-lg-4 col-sm-6 col-12 my-4" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title mb-4">Tools of my Trade</h3>
+              <p class="card-text lead">
+                I use every tool in the shed to get the job done right!
+              </p>
+            </div>
+            <div class="h5 mt-3">My sharpest tools</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  Atom Editor
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  Unity 2D/3D
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  Visual Studio
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  Visual Studio Code
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  GitHub Version Control
+                </button>
+              </li>
+            </ul>
           </div>
-          <div class="h5 mt-3">My sharpest tools</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                Atom Editor
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                Unity 2D/3D
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                Visual Studio
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                Visual Studio Code
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                GitHub Version Control
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="card col-lg-4 col-sm-6 my-4" style="width: 18rem;">
-          <div class="card-body">
-            <h3 class="card-title mb-4">Back-End</h3>
-            <p class="card-text lead">
-              My favorite area to dabble with code logic!
-            </p>
+          <div class="card col-lg-4 col-sm-6 col-12 my-4" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title mb-4">Back-End</h3>
+              <p class="card-text lead">
+                My favorite area to dabble with code logic!
+              </p>
+            </div>
+            <div class="h5 mt-3">My current stack</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  C#
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  Entity
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  MySQL
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  Angular
+                </button>
+              </li>
+              <li class="list-group-item accent-text h5">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg btn-block"
+                >
+                  ASP.NET Core
+                </button>
+              </li>
+            </ul>
           </div>
-          <div class="h5 mt-3">My current stack</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                C#
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                Entity
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                MySQL
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                Angular
-              </button>
-            </li>
-            <li class="list-group-item accent-text h5">
-              <button type="button" class="btn btn-outline-dark btn-lg btn-block">
-                ASP.NET Core
-              </button>
-            </li>
-          </ul>
         </div>
       </div>
+      <!--End Color Divider-->
     </div>
-
     <!--Projects Section-->
-
-    <div class="container-fluid mt-5">
-      <div class="row justify-content-center">
-        <!-- Projects are divided into cards or "tiles"-->
-        <div class="col col-lg-3">
-          <div class="card round-border mb-3">
-            <a href="https://addikins.github.io/productlandingpage" target="_blank">
-              <img class="card-img-top round-top" src="tree_island.png" alt="Equilinox Sample Image" />
-              <div class="card-body mb-2">
-                <h5 class="card-title">Equilinox Landing Page</h5>
-                <p class="card-text">
-                  Example of a Product Landing Page for the Indie Developed Equilinox Video Game. Part of the freeCodeCamp Responsive Web Design
-                  Certification.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">HTML5 / CSS3</small>
-                </p>
-              </div>
-            </a>
+    <div class="wrapper container-fluid">
+      <div class="container-fluid mt-5">
+        <!--Projects Heading-->
+        <div class="row justify-content-center">
+          <div class="col mb-5 text-center">
+            <h2>Check out some noteworthy projects I've worked on:</h2>
           </div>
         </div>
+        <!--End Row-->
+        <!-- Projects are divided into cards or "tiles"-->
+        <div class="row justify-content-center">
+          <div class="col col-lg-3 col-sm-6 col-12">
+            <div class="card round-border mb-3 project-card border-0">
+              <a href="https://addikins.github.io/techpage" target="_blank">
+                <img
+                  class="card-img-top round-top"
+                  src="background.jpg"
+                  alt="Tech Page Logo"
+                />
+                <div class="card-body mb-2">
+                  <h5 class="card-title">Tech Page</h5>
+                  <p class="card-text">
+                    Example of a Technical Documentation Page. Part of the
+                    freeCodeCamp Responsive Web Design Certification.
+                  </p>
+                  <p class="card-text">
+                    <small class="project-sub">HTML5 / CSS3</small>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
 
-  <div class="col col-lg-3">
-    <div class="card round-border mb-3">
-      <a href="https://addikins.github.io/techpage" target="_blank">
-        <img class="card-img-top round-top" src="techpage_logo.png" alt="Tech Page Logo" />
-        <div class="card-body mb-2">
-          <h5 class="card-title">Tech Page</h5>
-          <p class="card-text">
-            Example of a Technical Documentation Page. Part of the freeCodeCamp Responsive Web Design
-            Certification.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">HTML5 / CSS3</small>
-          </p>
-        </div>
-      </a>
-    </div>
-  </div>
+          <div class="col col-lg-3 col-sm-6 col-12">
+            <div class="card round-border mb-3 project-card border-0">
+              <a
+                href="https://addikins.github.io/productlandingpage"
+                target="_blank"
+              >
+                <img
+                  class="card-img-top round-top"
+                  src="tree_island.png"
+                  alt="Equilinox Sample Image"
+                />
+                <div class="card-body mb-2">
+                  <h5 class="card-title">Equilinox Landing Page</h5>
+                  <p class="card-text">
+                    Example of a Product Landing Page for the Indie Developed
+                    Equilinox Video Game. Part of the freeCodeCamp Responsive
+                    Web Design Certification.
+                  </p>
+                  <p class="card-text">
+                    <small class="project-sub">HTML5 / CSS3</small>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
 
-  <div class="col col-lg-3">
-    <div class="card round-border mb-3">
-      <a href="https://eastwind.azurewebsites.net/" target="_blank">
-        <img class="card-img-top round-top" src="angular_logo2.png" alt="Full-Stack Project Image" />
-        <div class="card-body mb-2">
-          <h5 class="card-title">Full-Stack Project</h5>
-          <p class="card-text">
-            Full-Stack Application including a MSSQL Database.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Angular / JavaScript / HTML5 / CSS3 / C# / ASP .Net Core</small>
-          </p>
+          <div class="col col-lg-3 col-sm-6 col-12">
+            <div class="card round-border mb-3 project-card border-0">
+              <a href="https://eastwind.azurewebsites.net/" target="_blank">
+                <img
+                  class="card-img-top round-top"
+                  src="angular_logo2.png"
+                  alt="Full-Stack Project Image"
+                />
+                <div class="card-body mb-2">
+                  <h5 class="card-title">Full-Stack Project</h5>
+                  <p class="card-text">
+                    Full-Stack Application including a MSSQL Database.
+                  </p>
+                  <p class="card-text">
+                    <small class="project-sub"
+                      >Angular / JavaScript / HTML5 / CSS3 / C# / ASP .Net
+                      Core</small
+                    >
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--End Row-->
         </div>
-      </a>
-    </div>
-  </div>
-  <!--End Row-->
+        <!--Show more section-->
+        <div class="row justify-content-center">
+          <button
+            class="btn btn-dark btn-lg my-5"
+            type="button"
+            data-toggle="collapse"
+            data-target="#extra-projects"
+            aria-expanded="false"
+            aria-controls="extra-projects"
+            id="extras-btn"
+          >
+            See more projects
+          </button>
+        </div>
+        <!--End Row-->
+        <div class="row justify-content-center collapse" id="extra-projects">
+          <div class="col col-lg-3 col-sm-6 col-12">
+            <div class="card round-border mb-3 project-card border-0">
+              <a
+                href="https://addikins.github.io/productlandingpage"
+                target="_blank"
+              >
+                <img
+                  class="card-img-top round-top"
+                  src="tree_island.png"
+                  alt="Equilinox Sample Image"
+                />
+                <div class="card-body mb-2">
+                  <h5 class="card-title">Equilinox Landing Page</h5>
+                  <p class="card-text">
+                    Example of a Product Landing Page for the Indie Developed
+                    Equilinox Video Game. Part of the freeCodeCamp Responsive
+                    Web Design Certification.
+                  </p>
+                  <p class="card-text">
+                    <small class="project-sub">HTML5 / CSS3</small>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-sm-6 col-12">
+            <div class="card round-border mb-3 project-card border-0">
+              <a href="https://addikins.github.io/techpage" target="_blank">
+                <img
+                  class="card-img-top round-top"
+                  src="background.jpg"
+                  alt="Tech Page Logo"
+                />
+                <div class="card-body mb-2">
+                  <h5 class="card-title">Tech Page</h5>
+                  <p class="card-text">
+                    Example of a Technical Documentation Page. Part of the
+                    freeCodeCamp Responsive Web Design Certification.
+                  </p>
+                  <p class="card-text">
+                    <small class="project-sub">HTML5 / CSS3</small>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-sm-6 col-12">
+            <div class="card round-border mb-3 project-card border-0">
+              <a href="https://eastwind.azurewebsites.net/" target="_blank">
+                <img
+                  class="card-img-top round-top"
+                  src="angular_logo2.png"
+                  alt="Full-Stack Project Image"
+                />
+                <div class="card-body mb-2">
+                  <h5 class="card-title">Full-Stack Project</h5>
+                  <p class="card-text">
+                    Full-Stack Application including a MSSQL Database.
+                  </p>
+                  <p class="card-text">
+                    <small class="project-sub"
+                      >Angular / JavaScript / HTML5 / CSS3 / C# / ASP .Net
+                      Core</small
+                    >
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--End Row-->
+        </div>
+        <!--End Project Section-->
       </div>
-      <!--End Project Section-->
     </div>
-    <!--End Color Divider-->
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="functions.js"></script>
+  </body>
 </html>

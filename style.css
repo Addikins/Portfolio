@@ -15,11 +15,12 @@ body {
     font-family: 'Stylish', sans-serif;
 }
 a {
-  color: #343a40;
+  color: whitesmoke;
   text-decoration: none;
 }
 a:hover {
   color: #C2BBFF;
+  text-decoration: none;
 }
 hr {
   border-radius: 50%;
@@ -62,4 +63,15 @@ height: 250px;
 }
 .round-top {
   border-radius: 10% 10% 0% 0%;
+}
+
+#extras-btn:hover {
+  color: #C2BBFF;
+}
+
+.project-card {
+  background-color: #343a40;
+}
+.project-sub {
+  color: whitesmoke;
 }
