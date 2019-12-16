@@ -48,7 +48,12 @@ hr {
   color: #343a40;
 }
 .accent-secondary {
-  background-color: #C2BBFF;
+  background-image: -webkit-linear-gradient( bottom, white, #C2BBFF77, #C2BBFF);
+     background-image: -moz-linear-gradient( bottom, white, #C2BBFF77, #C2BBFF);
+      background-image: -ms-linear-gradient( bottom, white, #C2BBFF77, #C2BBFF);
+       background-image: -o-linear-gradient( bottom, white, #C2BBFF77, #C2BBFF);
+          background-image: linear-gradient( bottom, white, #C2BBFF77, #C2BBFF);
+       background-attachment: fixed;
 }
 .logos {
   height:40px;
@@ -61,10 +66,12 @@ height: 250px;
 .round-border {
   border-radius: 10%;
 }
+.round-border-sm {
+  border-radius: 5%;
+}
 .round-top {
   border-radius: 10% 10% 0% 0%;
 }
-
 #extras-btn:hover {
   color: #C2BBFF;
 }
@@ -72,6 +79,41 @@ height: 250px;
 .project-card {
   background-color: #343a40;
 }
-.project-sub {
+.sub-text {
   color: whitesmoke;
+}
+
+.btn {
+  border-radius: 290486px;
+}
+.contact-sub {
+  border-radius: 15px;
+}
+.btn-outline-primary {
+  color: #C2BBFF;
+  outline-color: #C2BBFF;
+  border: 1px solid #C2BBFF;
+  box-shadow: none;
+  letter-spacing: .15em;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+background-color: #C2BBFF;
+color: whitesmoke;
+border-color: #C2BBFF;
+box-shadow: none;
+text-decoration: none;
+}
+.contact {
+  background-image: -webkit-linear-gradient( top, white, white, #C2BBFF77, #C2BBFFaa, #C2BBFFdd, #C2BBFF);
+     background-image: -moz-linear-gradient( top, white, white, #C2BBFF77, #C2BBFFaa, #C2BBFFdd, #C2BBFF);
+      background-image: -ms-linear-gradient( top, white, white, #C2BBFF77, #C2BBFFaa, #C2BBFFdd, #C2BBFF);
+       background-image: -o-linear-gradient( top, white, white, #C2BBFF77, #C2BBFFaa, #C2BBFFdd, #C2BBFF);
+          background-image: linear-gradient( top, white, white, #C2BBFF77, #C2BBFFaa, #C2BBFFdd, #C2BBFF);
+       background-attachment: fixed;
+       
+color: #4b4b4b;
+}
+#contact-logo {
+  height: 50px;
+  width: 50px;
 }
