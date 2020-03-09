@@ -13,7 +13,7 @@
 }
 body {
   font-family: "Sen", sans-serif;
-  background-color: black; 
+  background-color: black;
   color: whitesmoke;
 }
 
@@ -82,7 +82,9 @@ hr {
 .round-top {
   border-radius: 10% 10% 0% 0%;
 } */
-.card, .list-group-item, .project-card {
+.card,
+.list-group-item,
+.project-card {
   background-color: black;
 }
 .sub-text {
@@ -164,4 +166,11 @@ hr {
 #contact-logo {
   height: 50px;
   width: 50px;
+}
+
+#showcaseCarousel {
+  border: 10px outset dimgray;
+}
+.showcase-item {
+  height: 750px;
 }
