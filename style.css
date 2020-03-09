@@ -22,8 +22,15 @@ a {
   text-decoration: none;
 }
 a:hover {
+  cursor: pointer;
   color: #c2bbff;
   text-decoration: none;
+}
+.underlined {
+  text-decoration: underline;
+}
+.underlined:hover {
+  text-decoration: underline;
 }
 hr {
   border-radius: 50%;
@@ -82,14 +89,7 @@ hr {
 .round-top {
   border-radius: 10% 10% 0% 0%;
 } */
-.card,
-.list-group-item,
-.project-card {
-  background-color: black;
-}
-.sub-text {
-  color: whitesmoke;
-}
+
 
 .btn {
   border-radius: 290486px;
@@ -170,7 +170,23 @@ hr {
 
 #showcaseCarousel {
   border: 10px outset dimgray;
+
 }
-.showcase-item {
-  height: 750px;
+.showcase-item img {
+height: 425px;
+}
+.carousel-item {
+  max-height: 425px;
+  max-width: 700px;
+}
+.card,
+.list-group-item,
+.project-card {
+  background-color: black;
+}
+.project-card {
+  padding-top: 2em;
+}
+.sub-text {
+  color: whitesmoke;
 }
