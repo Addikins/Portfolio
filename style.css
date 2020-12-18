@@ -169,16 +169,16 @@ hr {
 }
 
 #showcaseCarousel {
-  border: 10px outset dimgray;
-
+  border: 8px outset whitesmoke;
+  width:100%;
 }
 .showcase-item img {
-height: 425px;
-}
-.carousel-item {
-  max-height: 425px;
-  max-width: 700px;
-}
+  height: 425px;
+  }
+  .carousel-item {
+    max-height: 425px;
+    max-width: 735px;
+  }
 .card,
 .list-group-item,
 .project-card {
@@ -189,4 +189,7 @@ height: 425px;
 }
 .sub-text {
   color: whitesmoke;
+}
+.card-img-top {
+  border: 4px outset whitesmoke;
 }
