@@ -21,11 +21,11 @@ a {
   color: whitesmoke;
   text-decoration: none;
 }
-a:hover {
-  cursor: pointer;
-  color: #c2bbff;
-  text-decoration: none;
-}
+    a:hover {
+        cursor: pointer;
+        color: #74c2fb;
+        text-decoration: none;
+    }
 .underlined {
   text-decoration: underline;
 }
@@ -33,12 +33,12 @@ a:hover {
   text-decoration: underline;
 }
 hr {
-  border-radius: 50%;
-  height: 2px;
-  width: 65%;
-  background-color: #c2bbff;
-  margin-top: 2em;
-  margin-bottom: 2em;
+    border-radius: 50%;
+    height: 2px;
+    width: 65%;
+    background-color: #74c2fb;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 .navbar {
   min-height: 80px;
@@ -56,7 +56,7 @@ hr {
   transition: 0.3s;
 }
 .accent-text {
-  color: #c2bbff;
+    color: #74c2fb;
 }
 .accent-text-secondary {
   color: #343a40;
@@ -98,21 +98,21 @@ hr {
   border-radius: 15px;
 }
 .btn-outline-primary {
-  color: #c2bbff;
-  outline-color: #c2bbff;
-  border: 1px solid #c2bbff;
-  box-shadow: none;
-  letter-spacing: 0.15em;
+    color: #74c2fb;
+    outline-color: #74c2fb;
+    border: 1px solid #74c2fb;
+    box-shadow: none;
+    letter-spacing: 0.15em;
 }
-.btn-outline-primary:hover,
-.btn-outline-primary:focus,
-.btn-outline-primary:active {
-  background-color: #c2bbff;
-  color: whitesmoke;
-  border-color: #c2bbff;
-  box-shadow: none;
-  text-decoration: none;
-}
+    .btn-outline-primary:hover,
+    .btn-outline-primary:focus,
+    .btn-outline-primary:active {
+        background-color: #74c2fb;
+        color: whitesmoke;
+        border-color: #74c2fb;
+        box-shadow: none;
+        text-decoration: none;
+    }
 /* .contact {
   background-image: -webkit-linear-gradient(
     top,
