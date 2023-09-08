@@ -113,13 +113,13 @@ hr {
   border: 8px outset #74c2fb;
   width:100%;
 }
-.showcase-item img {
+/* .showcase-item img {
   height: 425px;
   }
   .carousel-item {
     max-height: 425px;
     max-width: 735px;
-  }
+  } */
 .card,
 .list-group-item,
 .project-card {
