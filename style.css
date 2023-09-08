@@ -13,7 +13,10 @@
 }
 body {
   font-family: "Sen", sans-serif;
-  background-color: black;
+  /* background-color: black; */
+  /* background: radial-gradient(circle at 10% 20%, rgb(3, 235, 255) 0%, rgb(152, 70, 242) 100.2%); */
+  /* background: linear-gradient(110.2deg, rgb(99, 192, 227) 5.3%, rgb(98, 72, 194) 100.2%); */
+  background: linear-gradient(109.6deg, rgb(135, 168, 254) 11.2%, rgb(254, 165, 197) 100.2%);
   color: whitesmoke;
 }
 
@@ -42,7 +45,7 @@ hr {
 }
 .navbar {
   min-height: 80px;
-  background-color: black;
+  /* background-color: #74c2fb; */
 }
 .navbar-brand {
   line-height: 2em;
@@ -56,10 +59,10 @@ hr {
   transition: 0.3s;
 }
 .accent-text {
-    color: #74c2fb;
+    color: whitesmoke;
 }
 .accent-text-secondary {
-  color: #343a40;
+  color: whitesmoke;
 }
 /* .accent-secondary {
   background-image: -webkit-linear-gradient(bottom, white, #c2bbff77, #c2bbff);
@@ -75,21 +78,10 @@ hr {
 }
 #profile-pic {
   border-radius: 50%;
-  background-color: black;
-  border-color: black;
-  height: 350px;
+  background-color: #C8A2C8;
+  border-color: white;
+  height: 200px;
 }
-/* 
-.round-border {
-  border-radius: 10%;
-}
-.round-border-sm {
-  border-radius: 5%;
-}
-.round-top {
-  border-radius: 10% 10% 0% 0%;
-} */
-
 
 .btn {
   border-radius: 290486px;
@@ -97,79 +89,28 @@ hr {
 .contact-sub {
   border-radius: 15px;
 }
-.btn-outline-primary {
-    color: #74c2fb;
-    outline-color: #74c2fb;
+.btn-primary {
+  background: #74c2fb;
     border: 1px solid #74c2fb;
     box-shadow: none;
     letter-spacing: 0.15em;
 }
-    .btn-outline-primary:hover,
-    .btn-outline-primary:focus,
-    .btn-outline-primary:active {
-        background-color: #74c2fb;
-        color: whitesmoke;
-        border-color: #74c2fb;
-        box-shadow: none;
-        text-decoration: none;
+    .btn-primary:hover,
+    .btn-primary:active {
+      background: #85ccff;
+      color: whitesmoke;
+      border-color: #C8A2C8;
+      box-shadow: none;
+      text-decoration: none;
     }
-/* .contact {
-  background-image: -webkit-linear-gradient(
-    top,
-    white,
-    white,
-    #c2bbff77,
-    #c2bbffaa,
-    #c2bbffdd,
-    #c2bbff
-  );
-  background-image: -moz-linear-gradient(
-    top,
-    white,
-    white,
-    #c2bbff77,
-    #c2bbffaa,
-    #c2bbffdd,
-    #c2bbff
-  );
-  background-image: -ms-linear-gradient(
-    top,
-    white,
-    white,
-    #c2bbff77,
-    #c2bbffaa,
-    #c2bbffdd,
-    #c2bbff
-  );
-  background-image: -o-linear-gradient(
-    top,
-    white,
-    white,
-    #c2bbff77,
-    #c2bbffaa,
-    #c2bbffdd,
-    #c2bbff
-  );
-  background-image: linear-gradient(
-    top,
-    white,
-    white,
-    #c2bbff77,
-    #c2bbffaa,
-    #c2bbffdd,
-    #c2bbff
-  );
-  background-attachment: fixed;
 
-  color: #4b4b4b;
-} */
 #contact-logo {
   height: 50px;
   width: 50px;
 }
 
 #showcaseCarousel {
-  border: 8px outset whitesmoke;
+  border: 8px outset #74c2fb;
   width:100%;
 }
 .showcase-item img {
@@ -182,7 +123,8 @@ hr {
 .card,
 .list-group-item,
 .project-card {
-  background-color: black;
+  background-color: transparent;
+  /* border: 2px outset #C8A2C8; */
 }
 .project-card {
   padding-top: 2em;
@@ -191,5 +133,5 @@ hr {
   color: whitesmoke;
 }
 .card-img-top {
-  border: 4px outset whitesmoke;
+  border: 4px outset #74c2fb;
 }
