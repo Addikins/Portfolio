@@ -127,3 +127,14 @@ hr {
   border: 4px outset #74c2fb;
   border-radius: 1%;
 }
+
+.demo {
+  /* margin: auto 2em;
+  padding: auto 2em; */
+}
+/* .demo img {
+  max-height: 300px;
+  max-width: 450px;
+  width: auto;
+  height: auto;
+} */
