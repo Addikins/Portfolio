@@ -70,7 +70,7 @@ hr {
   border-radius: 50%;
   background-color: #C8A2C8;
   border-color: white;
-  height: 200px;
+  height: 300px;
 }
 
 .btn {
@@ -128,10 +128,10 @@ hr {
   border-radius: 1%;
 }
 
-.demo {
+/* .demo { */
   /* margin: auto 2em;
   padding: auto 2em; */
-}
+/* } */
 /* .demo img {
   max-height: 300px;
   max-width: 450px;
