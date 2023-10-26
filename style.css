@@ -57,6 +57,7 @@ hr {
   transition: 0.25s;
 }
 .logos {
+  border: none;
   height: 40px;
   width: 40px;
 }
