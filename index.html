@@ -132,9 +132,12 @@
       </div>
 
       <!--Showcase Section-->
-      <div class="row projects mx-md-4 mx-0 d-sm-block">
+      <div
+        class="row projects mx-md-4 mx-0"
+        data-masonry='{"percentPosition": true }'
+      >
         <!-- Acadicus-->
-        <div class="col col-lg-6 col-12 float-start">
+        <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
             <a href="https://acadicus.com/" target="_blank">
               <img
@@ -142,7 +145,7 @@
                 src="AcadicusPreview.gif"
                 alt="Acadicus Cover Image"
               />
-              <div class="card-body mb-2">
+              <div class="card-body">
                 <h5 class="card-title">Acadicus</h5>
                 <p class="card-text">
                   With the team at Arch Virtual, I contributed to the
@@ -170,7 +173,7 @@
         </div>
 
         <!-- Mysticum Mundus-->
-        <div class="col col-lg-6 col-12 float-end">
+        <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
@@ -183,7 +186,7 @@
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="card-body mb-2">
+            <div class="card-body">
               <h5 class="card-title">Mysticum Mundus</h5>
               <p class="card-text">
                 My current hobby WIP passion project, Mysticum Mundus is
@@ -204,7 +207,7 @@
         </div>
 
         <!-- Pinball Nightmare -->
-        <div class="col col-lg-6 col-12 float-start">
+        <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
             <a
               href="https://addikins.itch.io/pinball-nightmare"
@@ -215,7 +218,7 @@
                 src="PinballNightmarePreview.gif"
                 alt="Pinball Nightmare Cover Image"
               />
-              <div class="card-body mb-2">
+              <div class="card-body">
                 <h5 class="card-title">Pinball Nightmare</h5>
                 <p class="card-text">
                   A 2-day game jam game based off the theme of combining genres.
@@ -236,7 +239,7 @@
         </div>
 
         <!-- RPG Demo-->
-        <div class="col col-lg-6 col-12 float-end">
+        <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
@@ -249,7 +252,7 @@
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="card-body mb-2">
+            <div class="card-body">
               <h5 class="card-title">3D RPG Adventure</h5>
               <p class="card-text">
                 This project was a huge milestone for me in my early career. As
@@ -282,7 +285,7 @@
         </div>
 
         <!-- Roguelite Prototype -->
-        <div class="col col-lg-6 col-12 float-start">
+        <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
             <a
               href="https://addikins.itch.io/roguelite-prototype"
@@ -293,7 +296,7 @@
                 src="Roguelite_Prototype.png"
                 alt="Roguelite Prototype Cover Image"
               />
-              <div class="card-body mb-2">
+              <div class="card-body">
                 <h5 class="card-title">Roguelite Prototype</h5>
                 <p class="card-text">
                   A short proof of concept for a "Roguelite" with concurrent
@@ -313,7 +316,7 @@
         </div>
 
         <!-- Stealth Game Prototype-->
-        <div class="col col-lg-6 col-12 float-end">
+        <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
@@ -326,7 +329,7 @@
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="card-body mb-2">
+            <div class="card-body">
               <h5 class="card-title">Stealth Game Prototype</h5>
               <p class="card-text">
                 A fun game jam project I created where you have to escape a
@@ -342,7 +345,7 @@
         </div>
 
         <!-- PewPew9000 -->
-        <div class="col col-lg-6 col-12 float-start">
+        <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
             <a href="https://addikins.itch.io/pew-pew-9000" target="_blank">
               <img
@@ -350,7 +353,7 @@
                 src="PewPew9000Preview.gif"
                 alt="Pew Pew 9000 Logo"
               />
-              <div class="card-body mb-2">
+              <div class="card-body">
                 <h5 class="card-title">Play Pew Pew 9000</h5>
                 <p class="card-text">
                   An early project of mine, a classic space shooter game with
@@ -370,7 +373,7 @@
         </div>
 
         <!-- Block Breaker-->
-        <div class="col col-lg-6 col-12 float-end">
+        <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
             <a href="https://addikins.itch.io/block-breaker" target="_blank">
               <img
@@ -378,7 +381,7 @@
                 src="blockbreaker.png"
                 alt="Block Breaker Cover Image"
               />
-              <div class="card-body mb-2">
+              <div class="card-body">
                 <h5 class="card-title">Block Breaker</h5>
                 <p class="card-text">
                   One of my first projects, an arcade Block Breaker style game
@@ -561,11 +564,21 @@
       </div>
     </div>
 
-    <script src="./dom.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"
+      defer
+    ></script>
+    <script src="./dom.js" defer></script>
   </body>
 </html>
