@@ -63,6 +63,10 @@ a:hover {
 .intro {
   text-shadow: var(--title-text-shadow);
 }
+.nav-title {
+  max-width: 300px;
+  line-height: .75!important;
+}
 .navbar-brand {
   line-height: 2em;
 }

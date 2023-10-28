@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta property="og:title" content="Autumn Darkwood" />
-    <meta property="og:image" content="SitePreview.png" />
+    <meta property="og:image" content="./Media/SitePreview.png" />
     <meta property="og:description" content="Gameplay & Tools Engineer" />
     <meta property="og:type" content="website" />
     <meta
@@ -20,22 +20,18 @@
     />
     <link href="bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./Media/favicon.ico" />
     <title>Autumn Darkwood</title>
   </head>
 
   <body>
     <!--Navigation-->
-    <nav class="navbar sticky-top navbar-expand-sm">
+    <nav class="navbar sticky-top navbar-expand-sm py-sm-1">
       <div class="container">
-        <h1 class="fs-6">
-          <a class="d-block h1 mb-0 text-decoration-none" href="#">
-            <!-- <img src="logo3.png" class="align-top logos" alt="Main Logo" />  -->
-            Autumn Darkwood
-          </a>
-          <small class="fs-6">Gameplay & Tools Engineer</small>
-        </h1>
-
+        <a class="mx-md-4 py-0 h2 text-decoration-none lh-1 text-wrap nav-title mb-0" href="#">
+          Autumn Darkwood
+          <small class="fs-6 pt-0"> Gameplay & Tools Engineer</small>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,7 +44,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-end"
+          class="collapse navbar-collapse justify-content-end mx-md-4 "
           id="navbarSupportedContent"
         >
           <!-- <button id="themeToggle" class="btn btn-secondary">
@@ -65,7 +61,7 @@
               >
                 <img
                   class="d-inline-block align-top logos"
-                  src="github_logo2.png"
+                  src="./Media/github_logo2.png"
                   alt="GitHub Logo"
                 />
               </a>
@@ -80,7 +76,7 @@
               >
                 <img
                   class="d-inline-block align-top logos"
-                  src="linkedin_logo.png"
+                  src="./Media/linkedin_logo.png"
                   alt="Linkedin Logo"
                 />
               </a>
@@ -95,7 +91,7 @@
               >
                 <img
                   class="d-inline-block align-top logos"
-                  src="email_logo2.png"
+                  src="./Media/email_logo2.png"
                   alt="Email Logo"
                 />
               </a>
@@ -109,7 +105,7 @@
       <div class="row p-1 py-lg-3 px-lg-5 my-2 my-sm-5">
         <div class="col col-12 col-lg-3 mb-2 mb-lg-1">
           <img
-            src="Beach_Day.jpg"
+            src="./Media/Beach_Day.jpg"
             class="border border-3 rounded-circle img-fluid d-block mx-auto"
             id="profile-pic"
           />
@@ -145,7 +141,7 @@
             <a href="https://acadicus.com/" target="_blank">
               <img
                 class="card-img-top"
-                src="AcadicusPreview.gif"
+                src="./Media/AcadicusPreview.gif"
                 alt="Acadicus Cover Image"
               />
               <div class="card-body">
@@ -218,7 +214,7 @@
             >
               <img
                 class="card-img-top"
-                src="PinballNightmarePreview.gif"
+                src="./Media/PinballNightmarePreview.gif"
                 alt="Pinball Nightmare Cover Image"
               />
               <div class="card-body">
@@ -296,7 +292,7 @@
             >
               <img
                 class="card-img-top"
-                src="Roguelite_Prototype.png"
+                src="./Media/Roguelite_Prototype.png"
                 alt="Roguelite Prototype Cover Image"
               />
               <div class="card-body">
@@ -321,29 +317,29 @@
         <!-- Stealth Game Prototype-->
         <div class="col col-lg-6 col-12">
           <div class="card mb-3 project-card border-0">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="card-img-top"
-                width="640"
-                height="360"
-                src="https://www.youtube.com/embed/c2wmYxeFbH4?si=ONLnBiaYD6hteFrX"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Stealth Game Prototype</h5>
-              <p class="card-text">
-                A fun game jam project I created where you have to escape a
-                maze-like city landscape while hiding out of sight of zombie
-                hoards.
-              </p>
-              <p class="card-text">
-                <small class="badge bg-primary rounded-pill">Unity3D</small>
-                <small class="badge bg-secondary rounded-pill">C#</small>
-              </p>
-            </div>
+            <a
+              href="https://youtu.be/c2wmYxeFbH4?si=P39FeyGhkFO2OxnR"
+              target="_blank"
+            >
+              <img
+                class="card-img-top align-top"
+                src="./Media/ZombieChasePreview.gif"
+                alt="Pew Pew 9000 Logo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zombie Chase</h5>
+                <p class="card-text">
+                  A fun game jam project based on stealth where you have to
+                  escape a maze-like city landscape while hiding out of sight of
+                  zombie hoards. This was a solo project and allowed me to test
+                  out some fun new mechanics!
+                </p>
+                <p class="card-text">
+                  <small class="badge bg-primary rounded-pill">Unity3D</small>
+                  <small class="badge bg-secondary rounded-pill">C#</small>
+                </p>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -353,7 +349,7 @@
             <a href="https://addikins.itch.io/pew-pew-9000" target="_blank">
               <img
                 class="card-img-top align-top"
-                src="PewPew9000Preview.gif"
+                src="./Media/PewPew9000Preview.gif"
                 alt="Pew Pew 9000 Logo"
               />
               <div class="card-body">
@@ -381,15 +377,16 @@
             <a href="https://addikins.itch.io/block-breaker" target="_blank">
               <img
                 class="card-img-top align-top"
-                src="blockbreaker.png"
+                src="./Media/BlockBreakerPreview.gif"
                 alt="Block Breaker Cover Image"
               />
               <div class="card-body">
                 <h5 class="card-title">Block Breaker</h5>
                 <p class="card-text">
-                  One of my first projects, an arcade Block Breaker style game
-                  built from scratch in. The ball moves faster with every block
-                  that's broken. Every level increases in difficulty, can you
+                  One of my first projects and a great intro into Unity3D, this
+                  little arcade style Block Breaker game allowed me to start
+                  small and scale up. The ball moves faster with every block
+                  that's broken. Each level increases in difficulty, can you
                   pass them all?
                 </p>
                 <p class="card-text mt-1">
