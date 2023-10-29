@@ -61,10 +61,24 @@ a:hover {
 .intro {
   text-shadow: var(--title-text-shadow);
 }
-.nav-title {
+#nav-title {
   max-width: 300px;
   line-height: 0.75 !important;
 }
+#nav-title small {
+  font-size: 1rem;
+}
+@media (max-width: 576px) {
+  #nav-title {
+    /* Default h3 size */
+    font-size: calc(1.2rem + 0.2vw);
+  max-width: 200px;
+  }
+  #nav-title small {
+    font-size: 0.9rem;
+  }
+}
+
 .navbar-brand {
   line-height: 2em;
 }
