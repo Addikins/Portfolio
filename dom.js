@@ -7,25 +7,54 @@
 //     }
 // });
 
+var masonry;
+
+// This function will be called for each image once it's loaded
+function imageLoaded(imageElement) {
+  // Show the image
+  imageElement.style.display = "block";
+  // Hide the loading icon
+  var loadingIcon = imageElement.parentNode.querySelector(".loading-icon");
+  loadingIcon.style.display = "none";
+
+  // Call masonry layout method to layout the newly displayed image
+  if (masonry) {
+    masonry.layout();
+  }
+}
+
+// This will be called once all images have been either loaded or confirmed broken
+function allImagesLoaded(container) {
+  // Initialize masonry here if not already initialized
+  if (!masonry) {
+    masonry = new Masonry(container, {
+      itemSelector: ".col",
+      percentPosition: true,
+    });
+  } else {
+    // Layout the masonry again in case any late-loaded content changed
+    masonry.layout();
+  }
+}
+
+// Initialize event listeners
 window.onload = function () {
   var container = document.querySelector(".row[data-masonry]");
 
   if (typeof imagesLoaded === "function") {
-    // console.log("imagesLoaded library is recognized.");
-
-    imagesLoaded(container, function (instance) {
-      //   console.log(instance.images.length + " images are being tracked.");
-
-      // Initialize masonry after images are loaded
-      var masonry = new Masonry(container, {
-        percentPosition: true,
+    imagesLoaded(container)
+      .on("always", function () {
+        // Call this function when all images are loaded
+        allImagesLoaded(container);
+      })
+      .on("progress", function (instance, image) {
+        if (image.isLoaded) {
+          // Call the imageLoaded function for each image that's loaded
+          imageLoaded(image.img);
+        }
       });
-    }).on("progress", function (instance, image) {
-      var result = image.isLoaded ? "loaded" : "broken";
-      //   console.log("image is " + result + " for ", image.img.src);
-    });
   } else {
-    console.log(
+    console.error(
       "imagesLoaded library is not recognized. Ensure it's correctly linked."
     );
   }
@@ -33,10 +62,9 @@ window.onload = function () {
 
 // Re-initialize Masonry on window resize
 window.addEventListener("resize", function () {
-  var container = document.querySelector(".row[data-masonry]");
-  var masonry = new Masonry(container, {
-    percentPosition: true,
-  });
+  if (masonry) {
+    masonry.layout();
+  }
 });
 
 function getGradientColorAtYPosition(y) {
