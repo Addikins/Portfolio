@@ -142,13 +142,16 @@ body {
   font-size: 1.125rem;
 }
 .bg-secondary {
-  background-color: #a8c5f7 !important;
+  background-color: #8db1f0 !important; 
 }
 .bg-tertiary {
   background-color: #099b9b !important;
 }
 .bg-quaternary {
   background-color: #b13f8b !important;
+}
+.bg-five {
+  background-color: #707070 !important;
 }
 .badge {
   text-shadow: none;
