@@ -9,7 +9,7 @@
 
 var masonry;
 
-// This function will be called for each image once it's loaded
+// Activate Image once loaded, then Gif
 function imageLoaded(imageElement) {
   // Show the image
   imageElement.style.display = "block";
@@ -17,9 +17,27 @@ function imageLoaded(imageElement) {
   var loadingIcon = imageElement.parentNode.querySelector(".loading-icon");
   loadingIcon.style.display = "none";
 
+  loadGif(imageElement);
+
   // Call masonry layout method to layout the newly displayed image
   if (masonry) {
     masonry.layout();
+  }
+}
+
+// Activate Gif once loaded
+function loadGif(imageElement) {
+  var gifSrc = imageElement.getAttribute('data-gif');
+  if (gifSrc && imageElement.src.indexOf(gifSrc.slice(1)) === -1) {
+    var gifImage = new Image();
+    gifImage.onload = function () {
+      // Replace the still image with the GIF
+      imageElement.src = gifSrc;
+      if (masonry) {
+        masonry.layout();
+      }
+    };
+    gifImage.src = gifSrc;
   }
 }
 
@@ -36,6 +54,15 @@ function allImagesLoaded(container) {
     masonry.layout();
   }
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    img.onload = function () {
+      imageLoaded(this);
+    };
+  });
+});
 
 // Initialize event listeners
 window.onload = function () {
