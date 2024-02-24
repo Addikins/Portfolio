@@ -9,7 +9,7 @@
 
 var masonry;
 
-// Activate Image once loaded, then Gif
+// Activate Image once loaded
 function imageLoaded(imageElement) {
   // Show the image
   imageElement.style.display = "block";
@@ -19,27 +19,9 @@ function imageLoaded(imageElement) {
     loadingIcon.style.display = "none";
   }
 
-  loadGif(imageElement);
-
   // Call masonry layout method to layout the newly displayed image
   if (masonry) {
     masonry.layout();
-  }
-}
-
-// Activate Gif once loaded
-function loadGif(imageElement) {
-  var gifSrc = imageElement.getAttribute('data-gif');
-  if (gifSrc && imageElement.src.indexOf(gifSrc.slice(1)) === -1) {
-    var gifImage = new Image();
-    gifImage.onload = function () {
-      // Replace the still image with the GIF
-      imageElement.src = gifSrc;
-      if (masonry) {
-        masonry.layout();
-      }
-    };
-    gifImage.src = gifSrc;
   }
 }
 
@@ -55,6 +37,10 @@ function allImagesLoaded(container) {
     // Layout the masonry again in case any late-loaded content changed
     masonry.layout();
   }
+  const gifImages = document.querySelectorAll('img[data-gif]');
+  gifImages.forEach(imageElement => {
+    loadGif(imageElement);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -66,7 +52,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
-// Initialize event listeners
 window.onload = function () {
   var container = document.querySelector(".row[data-masonry]");
 
@@ -88,6 +73,21 @@ window.onload = function () {
     );
   }
 };
+
+
+function loadGif(imageElement) {
+  var gifSrc = imageElement.getAttribute('data-gif');
+  if (gifSrc && imageElement.src.indexOf(gifSrc.slice(1)) === -1) {
+    var gifImage = new Image();
+    gifImage.onload = function () {
+      imageElement.src = gifSrc;
+      if (masonry) {
+        masonry.layout();
+      }
+    };
+    gifImage.src = gifSrc;
+  }
+}
 
 // Re-initialize Masonry on window resize
 window.addEventListener("resize", function () {
