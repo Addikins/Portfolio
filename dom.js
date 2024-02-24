@@ -15,7 +15,9 @@ function imageLoaded(imageElement) {
   imageElement.style.display = "block";
   // Hide the loading icon
   var loadingIcon = imageElement.parentNode.querySelector(".loading-icon");
-  loadingIcon.style.display = "none";
+  if (loadingIcon) {
+    loadingIcon.style.display = "none";
+  }
 
   loadGif(imageElement);
 
