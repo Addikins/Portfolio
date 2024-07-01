@@ -1,8 +1,8 @@
 :root {
   --main-text: whitesmoke;
-  --bg-1: #769cfc;
-  --bg-2: #e66c99;
-  --main-text-shadow: 1px #707070;
+  --bg-1: #2163be;
+  --bg-2: #3475d0;
+  --main-text-shadow: 1px #525252;
   --title-text-shadow: 2px #707070;
   --highlight: #7ad8f3;
 }
@@ -97,7 +97,7 @@ a:hover {
   width: 100%;
   max-width: 250px;
   --bs-border-opacity: 0.75;
-  --bs-border-color: #74c2fb;
+  --bs-border-color: rgba(18, 81, 168, 0.463);
 }
 
 .contact-sub {
@@ -141,6 +141,9 @@ body {
 .small-text {
   font-size: 1.125rem;
 }
+.bg-primary {
+  background-color: #e10e31 !important;
+}
 .bg-secondary {
   background-color: #8db1f0 !important; 
 }
@@ -148,7 +151,7 @@ body {
   background-color: #099b9b !important;
 }
 .bg-quaternary {
-  background-color: #b13f8b !important;
+  background-color: #bfb21f !important;
 }
 .bg-five {
   background-color: #707070 !important;
